@@ -9,11 +9,15 @@ public class OK_CameraLook : MonoBehaviour
     public float fl_Sensitive;
     public float fl_Smooth;
 
-    public GameObject mGO_PlayerCharacter;
+    private GameObject mGO_PlayerCharacter;
+
+    public float fl_X_Max;
+    public float fl_X_Min;
+    public float fl_Y_Max;
+    public float fl_Y_Min;
 
     public bool bl_YClamp;
     public bool bl_XClamp;
-
     public bool bl_Stationary;
 
 
@@ -28,7 +32,13 @@ public class OK_CameraLook : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Station();
+        if (bl_Stationary == true)
+        {
+            bl_Stationary = true;
+            V2_Mouselook.y = Mathf.Clamp(V2_Mouselook.y, 0, 0);
+            V2_Mouselook.x = Mathf.Clamp(V2_Mouselook.x, 0, 0);
+            Cursor.lockState = CursorLockMode.None;
+        }
 
         if (bl_Stationary == false)
         {
@@ -65,23 +75,24 @@ public class OK_CameraLook : MonoBehaviour
     {
         if (bl_YClamp == true)
         {
-            V2_Mouselook.y = Mathf.Clamp(V2_Mouselook.y, -20, 20);
+            V2_Mouselook.y = Mathf.Clamp(V2_Mouselook.y, fl_Y_Min, fl_Y_Max);
         }
         if (bl_XClamp == true)
         {
-            V2_Mouselook.x = Mathf.Clamp(V2_Mouselook.x, -20, 20);
+            V2_Mouselook.x = Mathf.Clamp(V2_Mouselook.x, fl_X_Min, fl_X_Max);
         }
 
     }
 
-    void Station()
+    void Station(int in_Station)
     {
-        if (bl_Stationary == true)
-        {
-            bl_Stationary = true;
-            V2_Mouselook.y = Mathf.Clamp(V2_Mouselook.y, 0, 0);
-            V2_Mouselook.x = Mathf.Clamp(V2_Mouselook.x, 0, 0);
-            Cursor.lockState = CursorLockMode.None;
-        }
+        if (in_Station == 1)
+        bl_Stationary = true;
+    }
+
+    void CC_Enable()
+    {
+        bl_Stationary = false;
+
     }
 }

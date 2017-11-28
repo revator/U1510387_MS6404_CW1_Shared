@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.45140082, g: 0.5008932, b: 0.5723174, a: 1}
+  m_IndirectSpecularColor: {r: 0.45140088, g: 0.50089324, b: 0.5723175, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -196,6 +196,18 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 116.93301
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 6b9e1af1eaf5ebd4dbb6f7a6ad87c8dc, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 6b9e1af1eaf5ebd4dbb6f7a6ad87c8dc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000000, guid: 6b9e1af1eaf5ebd4dbb6f7a6ad87c8dc, type: 3}
+      propertyPath: m_Depth
+      value: -1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b9e1af1eaf5ebd4dbb6f7a6ad87c8dc, type: 3}
   m_IsPrefabParent: 0
@@ -329,7 +341,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 196678274}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 291, y: 175, z: 0}
+  m_LocalPosition: {x: 482.5, y: 180, z: 0}
   m_LocalScale: {x: 2, y: 0.5, z: 1}
   m_Children:
   - {fileID: 1203849659}
@@ -517,6 +529,73 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c784118e8dac13548832e0d70372f14f, type: 3}
   m_IsPrefabParent: 0
+--- !u!1001 &428869968
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 443421408}
+    m_Modifications:
+    - target: {fileID: 4822645094440590, guid: d5fd186d0e57fe843973a1380dc0c55f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 121
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822645094440590, guid: d5fd186d0e57fe843973a1380dc0c55f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822645094440590, guid: d5fd186d0e57fe843973a1380dc0c55f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 53
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822645094440590, guid: d5fd186d0e57fe843973a1380dc0c55f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822645094440590, guid: d5fd186d0e57fe843973a1380dc0c55f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822645094440590, guid: d5fd186d0e57fe843973a1380dc0c55f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822645094440590, guid: d5fd186d0e57fe843973a1380dc0c55f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822645094440590, guid: d5fd186d0e57fe843973a1380dc0c55f, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114891852825405920, guid: d5fd186d0e57fe843973a1380dc0c55f,
+        type: 2}
+      propertyPath: fl_speed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114891852825405920, guid: d5fd186d0e57fe843973a1380dc0c55f,
+        type: 2}
+      propertyPath: fl_jumpHeight
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114891852825405920, guid: d5fd186d0e57fe843973a1380dc0c55f,
+        type: 2}
+      propertyPath: fl_MidAirSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114891852825405920, guid: d5fd186d0e57fe843973a1380dc0c55f,
+        type: 2}
+      propertyPath: bl_isGrounded
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114746478983169460, guid: d5fd186d0e57fe843973a1380dc0c55f,
+        type: 2}
+      propertyPath: bl_Stationary
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d5fd186d0e57fe843973a1380dc0c55f, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &443421407
 GameObject:
   m_ObjectHideFlags: 0
@@ -542,9 +621,9 @@ Transform:
   m_LocalPosition: {x: 4.590001, y: 0.78, z: -15.227997}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1750419799}
-  - {fileID: 1236508042}
+  - {fileID: 836762299}
   - {fileID: 587362369}
+  - {fileID: 1236508042}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -692,7 +771,7 @@ MonoBehaviour:
     so certain I should listen to the town crier ramble on about another egregious
     story '
   description: 
-  character: {fileID: 1750419804}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -864,7 +943,7 @@ MonoBehaviour:
   storyText: I'm too tired to stand, I won't last another ten minutes! I will head
     off to bed.
   description: 
-  character: {fileID: 1750419804}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -889,7 +968,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: I'll spend a few minutes listening to him. I could use a good story!
   description: 
-  character: {fileID: 1750419804}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -990,8 +1069,13 @@ Transform:
   - {fileID: 224429033}
   - {fileID: 548438042}
   m_Father: {fileID: 443421408}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &672971872 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1765483691519660, guid: d5fd186d0e57fe843973a1380dc0c55f,
+    type: 2}
+  m_PrefabInternal: {fileID: 428869968}
 --- !u!4 &712698024 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: bb8c0e8eb3d69064a8ae10b5e0d62d8b, type: 3}
@@ -1037,6 +1121,46 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &836762298 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1438041292988812, guid: d5fd186d0e57fe843973a1380dc0c55f,
+    type: 2}
+  m_PrefabInternal: {fileID: 428869968}
+--- !u!4 &836762299 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4822645094440590, guid: d5fd186d0e57fe843973a1380dc0c55f,
+    type: 2}
+  m_PrefabInternal: {fileID: 428869968}
+--- !u!114 &836762300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 836762298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2a298277553b444bf750fbf577a42a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerText: {fileID: 2034265875}
+--- !u!114 &836762301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 836762298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: Ulfric
+  nameColor: {r: 1, g: 0, b: 0, a: 1}
+  soundEffect: {fileID: 0}
+  portraits: []
+  portraitsFace: 0
+  setSayDialog: {fileID: 0}
+  description: 
 --- !u!1 &863266235
 GameObject:
   m_ObjectHideFlags: 0
@@ -1294,7 +1418,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4645461114090982, guid: 62b774f181514b04cbb13f6447f726b0, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114009961237151248, guid: 62b774f181514b04cbb13f6447f726b0,
         type: 2}
@@ -1532,7 +1656,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 1464589128}
+  m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -1549,9 +1673,9 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1277527735}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 125.69, y: 9.400001, z: 138.472}
-  m_LocalScale: {x: 0.28867513, y: 0.28867513, z: 0.28867513}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 583.5, y: 205, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 196678275}
   - {fileID: 2034265874}
@@ -1596,11 +1720,6 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 515d5ee6ed53daa45974b3b9e180c1c6, type: 3}
   m_PrefabInternal: {fileID: 1530252334}
---- !u!20 &1464589128 stripped
-Camera:
-  m_PrefabParentObject: {fileID: 2000000, guid: 5e9e851c0e142814dac026a256ba2ac0,
-    type: 2}
-  m_PrefabInternal: {fileID: 2001230624}
 --- !u!1 &1469439689
 GameObject:
   m_ObjectHideFlags: 0
@@ -1719,7 +1838,7 @@ GameObject:
   - component: {fileID: 1496990041}
   - component: {fileID: 1496990040}
   - component: {fileID: 1496990039}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1995,7 +2114,7 @@ MonoBehaviour:
     themselves. It's time for me to hit the bed, but surely I'll have some time to
     hear what the town crier has to say.
   description: 
-  character: {fileID: 1750419804}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -2073,7 +2192,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: His stories of late were quite {i}intriguing{/i}!
   description: 
-  character: {fileID: 1750419804}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -2087,44 +2206,6 @@ MonoBehaviour:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: e3e7869774731504f99d7df44892ab0d, type: 3}
   m_PrefabInternal: {fileID: 1753151431}
---- !u!1 &1750419798 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-  m_PrefabInternal: {fileID: 2001230624}
---- !u!4 &1750419799 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-  m_PrefabInternal: {fileID: 2001230624}
---- !u!114 &1750419804
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1750419798}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameText: Ulfric
-  nameColor: {r: 0.44117647, g: 0, b: 0, a: 1}
-  soundEffect: {fileID: 0}
-  portraits: []
-  portraitsFace: 0
-  setSayDialog: {fileID: 0}
-  description: 
---- !u!114 &1750419805
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1750419798}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e2a298277553b444bf750fbf577a42a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timerText: {fileID: 2034265875}
 --- !u!1001 &1753151431
 Prefab:
   m_ObjectHideFlags: 0
@@ -2293,8 +2374,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1860484766}
-  selectedCommands: []
+  - {fileID: 1860484770}
+  selectedCommands:
+  - {fileID: 1860484772}
   variables: []
   description: 
   stepPause: 0
@@ -2409,7 +2491,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1860484770
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1860484763}
@@ -2464,7 +2546,7 @@ MonoBehaviour:
   - {fileID: 1860484778}
 --- !u!114 &1860484772
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1860484763}
@@ -2475,12 +2557,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 17
   indentLevel: 0
-  targetObject: {fileID: 1975138569}
+  targetObject: {fileID: 672971872}
   methodName: CCEnable
   delay: 1
 --- !u!114 &1860484773
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1860484763}
@@ -2506,7 +2588,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1860484774
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1860484763}
@@ -2579,7 +2661,7 @@ MonoBehaviour:
   setMenuDialog: {fileID: 0}
 --- !u!114 &1860484777
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1860484763}
@@ -2593,7 +2675,7 @@ MonoBehaviour:
   storyText: I was raised to believe nothing of what I hear, and only half of what
     I see. Right now I only see an old man telling spooky stories.
   description: 
-  character: {fileID: 1750419804}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -2605,7 +2687,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1860484778
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1860484763}
@@ -2616,12 +2698,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 16
   indentLevel: 0
-  targetObject: {fileID: 1975138569}
+  targetObject: {fileID: 672971872}
   methodName: CCEnable
   delay: 1
 --- !u!114 &1860484779
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1860484763}
@@ -2647,7 +2729,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1860484780
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1860484763}
@@ -2660,7 +2742,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Don't be silly old man, a god would never turn on his own!
   description: 
-  character: {fileID: 1750419804}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -2723,73 +2805,6 @@ MonoBehaviour:
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
---- !u!1 &1975138569 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1595560363581772, guid: 62b774f181514b04cbb13f6447f726b0,
-    type: 2}
-  m_PrefabInternal: {fileID: 1111040615}
---- !u!1001 &2001230624
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 443421408}
-    m_Modifications:
-    - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 121.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 7.8200006
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 53.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-      propertyPath: m_Name
-      value: Ulfric (PC)
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2000000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-      propertyPath: far clip plane
-      value: 1000
-      objectReference: {fileID: 0}
-    - target: {fileID: 2000000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-      propertyPath: m_CullingMask.m_Bits
-      value: 33
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &2027935235
 Prefab:
   m_ObjectHideFlags: 0
@@ -2880,7 +2895,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2034265873}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -285.5, y: 162.29999, z: 0}
+  m_LocalPosition: {x: -477, y: 167.29999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1277527739}
@@ -3042,7 +3057,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 3
   indentLevel: 0
-  targetObject: {fileID: 1975138569}
+  targetObject: {fileID: 672971872}
   methodName: CCEnable
   delay: 1
 --- !u!114 &2044207019
@@ -3125,7 +3140,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 2044207020}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 2044207018}
   variables: []
   description: 
   stepPause: 0
